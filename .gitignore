@@ -35,7 +35,7 @@ migrate_working_dir/
 # Filter out Firebase Config
 android/app/google-services.json
 lib/firebase_options.dart
-
+firebase.json
 # Filter out massive build folders
 build/
 .dart_tool/
