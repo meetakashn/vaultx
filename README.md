@@ -1,16 +1,31 @@
-# vault_x
+# VaultX 🔐
 
-password management
+VaultX is a secure, end-to-end encrypted password management application built with Flutter and Firebase. It allows users to store sensitive account information with AES-256 encryption, ensuring that only the user can access their data.
 
-## Getting Started
+## 🚀 Live Demo & Download
+* **Web Version:** [https://meetakashn.github.io/vaultx/](https://meetakashn.github.io/vaultx/)
+* **Android App:** [Download APK from Releases](https://github.com/meetakashn/vaultx/releases)
 
-This project is a starting point for a Flutter application.
+## ✨ Key Features
+* **AES-256 Encryption:** All sensitive fields are encrypted locally using a master key.
+* **Firebase Integration:** Secure cloud sync across devices using Firestore.
+* **Password Generator:** Built-in tool to create strong, random passwords.
+* **Modern UI:** Clean, dark-themed interface built for speed and security.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Security Architecture
+VaultX uses a layered security approach:
+1. **PBKDF2:** For deriving encryption keys from user passwords.
+2. **AES-CBC:** For encrypting the actual vault data.
+3. **SHA-256:** For deterministic key generation for specific vault fields.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ⚙️ Setup Instructions (For Developers)
+To run this project locally, you must provide your own Firebase configuration:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Firebase Project:** Create a new project in the [Firebase Console](https://console.firebase.google.com/).
+2. **Android Setup:** Download your `google-services.json` and place it in `android/app/`.
+3. **Flutterfire:** Run `flutterfire configure` to generate your `lib/firebase_options.dart`.
+4. **Dependencies:** Run `flutter pub get`.
+5. **Run:** Execute `flutter run`.
+
+---
+*Developed by [meetakashn](https://github.com/meetakashn)*
