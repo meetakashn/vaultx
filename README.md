@@ -17,15 +17,3 @@ VaultX uses a layered security approach:
 1. **PBKDF2:** For deriving encryption keys from user passwords.
 2. **AES-CBC:** For encrypting the actual vault data.
 3. **SHA-256:** For deterministic key generation for specific vault fields.
-
-## ⚙️ Setup Instructions (For Developers)
-To run this project locally, you must provide your own Firebase configuration:
-
-1. **Firebase Project:** Create a new project in the [Firebase Console](https://console.firebase.google.com/).
-2. **Android Setup:** Download your `google-services.json` and place it in `android/app/`.
-3. **Flutterfire:** Run `flutterfire configure` to generate your `lib/firebase_options.dart`.
-4. **Dependencies:** Run `flutter pub get`.
-5. **Run:** Execute `flutter run`.
-
----
-*Developed by [meetakashn](https://github.com/meetakashn)*
